@@ -1,10 +1,29 @@
 import React from "react";
 import Home from "./components/Home-Page/Home";
-
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
+import About from "./components/About";
+import Product from "./components/Product";
+import Store from "./components/Store";
 
 function App() {
-  return <Home />;
+  return (
+    <Router>
+      <Route path="/home" exact component={Home} />
+      <Route path="/" exact component={Home} />
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/products">
+          <Product />
+        </Route>
+        <Route path="/store">
+          <Store />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;

@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "../Home-Page/Home";
+// import { Link } from "react-router-dom";
 
 const IntroPage = () => {
   return (
@@ -23,9 +24,18 @@ const IntroPage = () => {
               guarantee it!
             </p>
             <div className="intro-button mx-auto">
-              <a className="btn btn-primary btn-xl" to="/">
+              {/* <Link className="btn btn-primary btn-xl" to="/home">
                 Visit Us Today!
-              </a>
+              </Link> */}
+              <button
+                type="button"
+                className="btn btn-primary btn-xl"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="1 New Road Iyiowa Odekpe"
+              >
+                Visit US Today
+              </button>
             </div>
           </div>
         </div>

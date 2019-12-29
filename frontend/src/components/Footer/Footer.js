@@ -9,6 +9,8 @@ const Footer = () => {
         </p>
         <p className="m-0 small">
           All Rights Reserved, Property of Jeremy Blendz
+          <br />
+          Email: josephjeremiah564@yahoo.com
         </p>
       </div>
     </footer>

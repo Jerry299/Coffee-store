@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <nav className="navbar navbar-expand-lg navbar-dark py-lg-4 " id="mainNav">
       <div className="container">
-        <a
+        <Link
           className="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
-          href="www.g"
+          to="/www.g"
         >
-          Start Bootstrap
-        </a>
+          J.BLENDZ
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,37 +25,37 @@ const Navigation = () => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item active px-lg-4">
-              <a
+              <Link
                 className="nav-link text-uppercase text-expanded"
-                href="index.html"
+                to="/home"
               >
                 Home
                 <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item px-lg-4">
-              <a
+              <Link
                 className="nav-link text-uppercase text-expanded"
-                href="www.about.html"
+                to="/about"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item px-lg-4">
-              <a
+              <Link
                 className="nav-link text-uppercase text-expanded"
-                href="products.html"
+                to="/products"
               >
                 Products
-              </a>
+              </Link>
             </li>
             <li className="nav-item px-lg-4">
-              <a
+              <Link
                 className="nav-link text-uppercase text-expanded"
-                href="www.store.html"
+                to="/store"
               >
                 Store
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
