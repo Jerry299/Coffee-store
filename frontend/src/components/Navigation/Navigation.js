@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark py-lg-4 " id="mainNav">
       <div className="container">
-        <Link
+        <NavLink
           className="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
-          to="/www.g"
+          to="/home"
         >
           J.BLENDZ
-        </Link>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,38 +24,54 @@ const Navigation = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item active px-lg-4">
-              <Link
+            <li className="nav-item px-lg-4">
+              <NavLink
                 className="nav-link text-uppercase text-expanded"
                 to="/home"
+                activeStyle={{
+                  background: "red",
+                  color: "white"
+                }}
               >
                 Home
                 <span className="sr-only">(current)</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item px-lg-4">
-              <Link
+              <NavLink
                 className="nav-link text-uppercase text-expanded"
                 to="/about"
+    activeStyle={{
+                  background: "red",
+                  color: "white"
+                }}
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item px-lg-4">
-              <Link
+              <NavLink
                 className="nav-link text-uppercase text-expanded"
                 to="/products"
+activeStyle={{
+                  background: "red",
+                  color: "white"
+                }}
               >
                 Products
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item px-lg-4">
-              <Link
+              <NavLink
                 className="nav-link text-uppercase text-expanded"
                 to="/store"
+activeStyle={{
+                  background: "red",
+                  color: "white"
+                }}
               >
                 Store
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
