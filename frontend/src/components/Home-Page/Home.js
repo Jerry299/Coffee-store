@@ -5,6 +5,7 @@ import Promise from "../Promise/Promise";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Navigation from "../Navigation/Navigation";
+import ContactForm from "../Contact/ContactForm";
 
 class Home extends Component {
   render() {
@@ -15,6 +16,7 @@ class Home extends Component {
         <IntroPage />
         <Promise />
         <Footer />
+        <ContactForm />
       </>
     );
   }

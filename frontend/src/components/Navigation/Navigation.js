@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark py-lg-4 " id="mainNav">
+    <nav className="navbar navbar-expand-lg navbar-dark py-lg-5 " id="mainNav">
       <div className="container">
         <NavLink
           className="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none"
@@ -41,7 +41,7 @@ const Navigation = () => {
               <NavLink
                 className="nav-link text-uppercase text-expanded"
                 to="/about"
-    activeStyle={{
+                activeStyle={{
                   background: "red",
                   color: "white"
                 }}
@@ -53,7 +53,7 @@ const Navigation = () => {
               <NavLink
                 className="nav-link text-uppercase text-expanded"
                 to="/products"
-activeStyle={{
+                activeStyle={{
                   background: "red",
                   color: "white"
                 }}
@@ -65,12 +65,24 @@ activeStyle={{
               <NavLink
                 className="nav-link text-uppercase text-expanded"
                 to="/store"
-activeStyle={{
+                activeStyle={{
                   background: "red",
                   color: "white"
                 }}
               >
                 Store
+              </NavLink>
+            </li>
+            <li className="nav-item px-lg-4">
+              <NavLink
+                className="nav-link text-uppercase text-expanded"
+                to="/contact"
+                activeStyle={{
+                  background: "red",
+                  color: "white"
+                }}
+              >
+                Contact Us
               </NavLink>
             </li>
           </ul>
